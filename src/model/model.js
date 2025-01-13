@@ -1,5 +1,5 @@
 import { DataTypes,} from "sequelize"; 
-import { database } from "../database/config-database";
+import { database } from "../database/config-database.js";
 
 const characthers = database.define("personagens",{
     id: {
