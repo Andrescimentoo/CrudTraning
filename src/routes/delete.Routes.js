@@ -3,6 +3,6 @@ import { deleteController } from "../controller/delete.controller.js";
 
 const deleteRouter = Router()
 
-deleteRouter.delete("/",deleteController)
+deleteRouter.delete("/routeDelete",deleteController)
 
 export{deleteRouter}
