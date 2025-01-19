@@ -1,4 +1,4 @@
-import { characthers } from "../model/model.js";
+import { characthers } from "../model/model.js"
 
 const postController = async (req,res) => {
     try {
@@ -44,17 +44,3 @@ export{postController}
 
 
 
-/*import { characthers } from "../model/model.js";
-
-const postController = async (req,res) => {
-    try {
-        const createCharacther = await characthers.create(req.body)
-       
-        res.status(201).send(createCharacther)
-    } catch (error) {
-        res.status(500).send(error)
-        console.log("erro ao criar personagem!",error)
-    }
-}
-
-export{postController}
