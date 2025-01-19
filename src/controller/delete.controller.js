@@ -8,6 +8,7 @@ import { characthers } from "../model/model.js";
 const deleteController = async (req,res) => {
     try {
        const getbyId = await characthers.findByPk(req.params.id) 
+       console.log(getbyId)       
        
        if (!getbyId) {
         res.status(404).send({message:"personagem nao encontrado"})
