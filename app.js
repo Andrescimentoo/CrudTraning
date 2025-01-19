@@ -1,14 +1,16 @@
 import express from "express"
 import { routeGet } from "./src/routes/get.Routes.js"
 import { putRouter } from "./src/routes/put.Routes.js"
+import { postRouter } from "./src/routes/post.Routes.js"
+import { deleteRouter } from "./src/routes/delete.Routes.js"
 
 const app = express()
 const Port = 3000
 
 app.use(express.json())
 
-app.use(routeGet)
-app.use(putRouter)
+app.use(routeGet,putRouter,postRouter,deleteRouter)
+
 
 try {
     app.listen(Port, () => {
