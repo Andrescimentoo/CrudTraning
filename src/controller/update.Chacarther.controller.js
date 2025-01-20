@@ -1,6 +1,6 @@
 import { characthers } from "../model/model.js";
 
-const putcontroller = async (req,res) => {
+const updateChacarther = async (req,res) => {
     try {
         const getById = await characthers.findByPk(req.params.id)//você vai encontrar o personagem pelo ID passado na requisição
         
@@ -18,4 +18,4 @@ const putcontroller = async (req,res) => {
 }
     
 
-export {putcontroller}
+export {updateChacarther}

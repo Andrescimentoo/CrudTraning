@@ -1,6 +1,6 @@
 import { characthers } from "../model/model.js";
 
-const getcontroller = async (req,res) => {
+const findAllCharacthers = async (req,res) => {
     try {
       const getChacarcters =  await characthers.findAll()
       res.status(200).send(getChacarcters)
@@ -9,4 +9,4 @@ const getcontroller = async (req,res) => {
         console.log("erro ao enviar personagens", error)
     }
 }
-export{getcontroller}
+export{findAllCharacthers}
